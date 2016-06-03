@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        #div1 {
+            float: left;
+            width: 50px;
+            height: 25px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+
+        #bottom {
+            margin: 150px 0px 0px 0px;
+        }
+
+        #main {
+            float: left;
+        }
+        #title{
+            font-size:25px
+           
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+
+    <p id="title">Tic-tac-toe_CS557D_HW_Keyur Patel_18842</p>
+    <div id="main">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br />
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br />
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div><br />
+    <div id="bottom">
+        <div>
+            <img id="drag1" src="X.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag1" src="X.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag2" src="X.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag3" src="X.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag4" src="X.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+        </div><br />
+        <div>
+            <img id="drag5" src="O.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag6" src="O.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag7" src="O.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag8" src="O.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+            <img id="drag9" src="O.gif" draggable="true" ondragstart="drag(event)" width="49" height="24" />
+        </div>
+    </div>
+</body>
+</html>
