@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1
+{
+width:100px; height:250px; margin:10px; padding:20px; border:3px solid #aaaaaa;
+}
+table
+{
+    border-color: #ff0000 #0000ff;
+}
+
+</style>
+
+<script>
+
+	function drag(ev)
+	{
+		ev.dataTransfer.setData("Hello",ev.target.id);
+	}
+	function allowDrop(ev)
+	{
+		ev.preventDefault();
+	}
+	function drop(ev)
+	{
+		ev.preventDefault();
+		var data=ev.dataTransfer.getData("Hello");
+		ev.target.appendChild(document.getElementById(data));
+	}
+	
+</script>
+</head>
+<body>
+<h1 align="center">Tic-Tac-Toe</h1>
+<table border="1" cellpadding="80" align="center" width="10%" height="45%" border="red">
+
+<tr>
+<td id="td1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></td>
+<td id="td2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+<td id="td3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+</tr >
+
+<tr>
+<td id="td4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+<td id="td5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+<td id="td6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+</tr>
+
+
+<tr>
+<td id="td7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+<td id="td8" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+<td id="td9" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+</tr>
+
+</table>
+
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<img id="img1" src="circle.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img2" src="circle1.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img3" src="circle2.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img4" src="circle3.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img5" src="circle4.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+		 <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		 
+<img id="img6" src="cross.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img7" src="cross1.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img8" src="cross1.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img9" src="cross3.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+<img id="img10" src="cross4.png" draggable="true" 
+         width="110" height="110" ondragstart="drag(event)" >
+		 
+	
+</body>
+</html>
