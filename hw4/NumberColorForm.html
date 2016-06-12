@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        #main {
+            height: 224px;
+            width: 300px;
+            float: left;
+            border: dotted;
+            border-radius: 0px;
+        }
+
+        #button {
+            height: 30px;
+            width: 110px;
+            margin: 0px 0px 0px 129px;
+        }
+
+        #div1 {
+            margin: 25px 0px 6px 15px;
+            ;
+            font-size: 25px;
+        }
+
+        #div2 {
+            margin: 5px 0px 0px 15px;
+            font-size: 25px;
+        }
+
+        #div3 {
+            margin: 10px 0px 0px 0px;
+        }
+
+        #number {
+            width: 150px;
+            height: 28px;
+        }
+
+        #color {
+            width: 150px;
+            height: 30px;
+            margin: 0px 0px 0px 25px;
+        }
+
+        #demo {
+            height: 28px;
+            padding-left: 18px;
+        }
+    </style>
+   
+</head>
+<body>
+    <form id="myform" onsubmit="event.preventDefault();" >
+        <div id="main">
+            <div id="div1">
+                <label>Color:</label>
+                <input type="color" id="color" />
+            </div><br />
+            <div id="div2">
+                <label>Number:</label>
+                <input type="number" min="0" max="130" id="number" required />
+            </div>
+            <div> <p id="demo"></p></div>
+            <div id="div3"><input type="submit" value="Save" id="button"  onclick="clickkaryu();" /></div>
+        </div>
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
