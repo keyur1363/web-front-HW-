@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+    <h1>Geolocation_CS557D_HW_Keyur Patel_18842</h1>
+    <div id="main">
+        <div id="divadd1">
+            <label>Address 1:</label>
+            <input type="text" id="add1" />
+        </div>
+        <div id="divadd2">
+            <label>Address 2:</label>
+            <input type="text" id="add2" />
+        </div>
+        <div id="divdis">
+            <label>Distance:</label>
+            <label id="dis"></label>
+        </div>
+        <div id="divbtn">
+            <input type="button" id="btn" value="Calculate" onclick="GetRoute()" />
+        </div>
+    </div>
+
+</body>
+</html>

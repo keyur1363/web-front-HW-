@@ -1,0 +1,61 @@
+#main {
+    border: dotted;
+    border-radius: 9px;
+    width: 372px;
+    height: 300px;
+}
+
+#divadd1 {
+    margin: 40px 0px 0px 20px;
+}
+
+    #divadd1 label {
+        font-size: 25px;
+    }
+
+#add1 {
+    width: 200px;
+    height: 25px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#divadd2 {
+    margin: 30px 0px 0px 20px;
+}
+
+    #divadd2 label {
+        font-size: 25px;
+    }
+
+#add2 {
+    width: 200px;
+    height: 25px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+#divdis {
+    margin: 30px 0px 0px 20px;
+}
+
+    #divdis label {
+        font-size: 25px;
+    }
+
+#dis {
+    margin-left: 25px;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#divbtn {
+    margin: 30px 0px 0px 20px;
+}
+
+#btn {
+    height: 30px;
+    width: 150px;
+    margin-left: 140px;
+}

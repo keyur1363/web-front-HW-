@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Calculator HTML</title>
+</head>
+<body bgcolor="white" text="    ">
+
+    <strong><h2>Calculator_Implementation_HW5_Keyur Patel_18842</h2></strong>
+
+    <form name="calculator" >
+        <br />
+        <table>
+            <tr>
+                <td colspan="5" style="padding:0px 0px 15px;">
+                    <input type="text" style="width:163px" name="ans" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="reset" style="width:61px"><span>Clear</span></button>
+                </td>
+
+                <td>
+                    <button type="button" style="width:29px; margin-left: -2px;" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">=</button>
+                </td>
+                <td>
+                    <button type="button" style="width:35px; margin-left: -2px;" onclick="document.calculator.ans.value+='+/-'">+/-</button>
+                </td>
+                <td>
+                    <button type="button" style="width:29px" onclick="document.calculator.ans.value+='.'">.</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='*'">*</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='/'">/</button>
+                </td>
+                <td>
+                    <button type="button" style="width:29px" onclick="document.calculator.ans.value+='+'">+</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='-'">-</button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='1'">1</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='2'">2</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='3'">3</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='4'">4</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='5'">5</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='6'">6</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='7'">7</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='8'">8</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='9'">9</button>
+                </td>
+                <td>
+                    <button type="button" onclick="document.calculator.ans.value+='0'">0</button>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
