@@ -13,14 +13,14 @@ function WebSocketTest()
      //     var ws = new WebSocket("ws://localhost:8080");
      // - Use this line if the browser would like to communicate with
      //   the server where client.html is downloaded.
-       var ws = new WebSocket("wss://" + location.host, 'echo-protocol');
+     //  var ws = new WebSocket("wss://" + location.host, 'echo-protocol');
      //   Refer Zhomart Mukhamejanov's example
      // - Websocket allows connection from any source, but first
      //   connection should be http request, they call it
      //   "Websocket handshake". For example, you can access
      //      http://npu-socket.herokuapp.com/
      //   then it is possible to write like this
-        //  var ws = new WebSocket("wss://npu-socket.herokuapp.com    ", 'echo-protocol');
+          var ws = new WebSocket("ws://npu-socket.herokuapp.com    ", 'echo-protocol');
    //var ws = new WebSocket("ws://localhost:8080", 'echo-protocol');
     // var ws = new WebSocket("wss://" + window.location.host, 'echo-protocol');
    
