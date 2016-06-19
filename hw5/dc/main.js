@@ -1,37 +1,31 @@
+google.maps.event.addDomListener(window, 'load', function () {
+    new google.maps.places.SearchBox(document.getElementById('add1'));
+    new google.maps.places.SearchBox(document.getElementById('add2'));
+});
 
+var source, destination;
 
-        var source, destination;
-
-        var directionsService = new google.maps.DirectionsService();
-
-        google.maps.event.addDomListener(window, 'load', function () {
-            new google.maps.places.SearchBox(document.getElementById('add1'));
-            new google.maps.places.SearchBox(document.getElementById('add2'));
-        });
-
+var directionsService = new google.maps.DirectionsService();
+      
         function GetRoute() {
+           
+                
+
+
 
             //*********DIRECTIONS AND ROUTE**********************//
             source = document.getElementById("add1").value;
             destination = document.getElementById("add2").value;
-
-            var request = {
-                origin: source,
-                destination: destination,
-            };
-            directionsService.route(request, function (response, status) {
-                if (status == google.maps.DirectionsStatus.OK) {
-                    directionsDisplay.setDirections(response);
-                }
-            });
-
+           
             //*********DISTANCE***********//
-            var service = new google.maps.DistanceMatrixService();
+            var service = new google.maps.DistanceMatrixService();    
             service.getDistanceMatrix({
                 origins: [source],
                 destinations: [destination],
                 travelMode: google.maps.TravelMode.DRIVING,
-                unitSystem: google.maps.UnitSystem.Imperial,
+                unitSystem: google.maps.UnitSystem.IMPERIAL,
+                avoidHighways: false,
+                avoidTolls: false
             }, function (response, status) {
                 if (status == google.maps.DistanceMatrixStatus.OK && response.rows[0].elements[0].status != "ZERO_RESULTS") {
                     var distance = response.rows[0].elements[0].distance.text;
