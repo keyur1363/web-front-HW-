@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <form name="calculator">
+       <h1 id="heading">Calculator_Implementation_CS557_HW5</h1>
+     
+        <div class="box">
+            <div class="display"><input type="text" readonly size="18" id="d" name="ans"></div>
+            <div class="keys">
+                <p>
+                    <!--<input type="button" class="button gray"
+                           value="mrc" onclick='c("Created....................")'>
+                    <input type="button" class="button gray"
+                           value="m-" onclick='c("...............by............")'>
+                    <input type="button" class="button gray" value="m+" onclick='c(".....................Anoop")'>-->
+                    <label id="lab">Keyur_18842</label>
+                    <input type="button" class="button blue" id="divide" value="/" onclick='v("/")'>
+                </p>
+                <p>
+                    <input type="button" class="button black" value="7" onclick="document.calculator.ans.value+='7'">
+                    <input type="button" class="button black" value="8" onclick="document.calculator.ans.value+='8'">
+                    <input type="button" class="button black" value="9"onclick="document.calculator.ans.value+='9'">
+                    <input type="button" class="button blue" value="*" onclick="document.calculator.ans.value+='*'">
+                </p>
+                <p>
+                    <input type="button" class="button black" value="4" onclick="document.calculator.ans.value+='4'">
+                    <input type="button" class="button black" value="5" onclick="document.calculator.ans.value+='5'">
+                    <input type="button" class="button black" value="6" onclick="document.calculator.ans.value+='6'">
+                    <input type="button" class="button blue" value="-" onclick="document.calculator.ans.value+='-'">
+                </p>
+                <p>
+                    <input type="button" class="button black" value="1" onclick="document.calculator.ans.value+='1'">
+                    <input type="button" class="button black" value="2" onclick="document.calculator.ans.value+='2'">
+                    <input type="button" class="button black" value="3" onclick="document.calculator.ans.value+='3'">
+                    <input type="button" class="button blue" value="+" onclick="document.calculator.ans.value+='+'">
+                </p>
+                <p>
+                    <input type="button" class="button black" value="0" onclick="document.calculator.ans.value+='0'">
+                    <input type="button" class="button black" value="." onclick="document.calculator.ans.value+='.'">
+                    <input type="reset" class="button black" value="C" />
+                    <input type="button" class="button orange" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
