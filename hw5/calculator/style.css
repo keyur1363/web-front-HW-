@@ -1,6 +1,7 @@
 body
 {
 background-color:white;
+zoom:115%;
 } 
 .box
 {
@@ -102,5 +103,5 @@ line-height:10px;
  margin:0px 0px 0px 62px;   
 }
 #heading{
-   padding: 0px 0px 0px 430px;
+   padding: 0px 0px 0px 495px;
 }
